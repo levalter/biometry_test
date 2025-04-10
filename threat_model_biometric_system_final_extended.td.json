@@ -1,0 +1,891 @@
+{
+  "version": "2.0",
+  "summary": "Biometric Authentication System - Final Model",
+  "detail": "Final threat model with all DFD elements, flows, boundaries and threat mappings.",
+  "owner": "Security Architect",
+  "contributors": [
+    "ChatGPT Assistant"
+  ],
+  "diagrams": [
+    {
+      "title": "Complete DFD - Biometric System",
+      "id": "dfd-complete-biometric-system",
+      "diagramType": "DFD",
+      "diagramJson": {
+        "cells": [
+          {
+            "id": "сотрудник",
+            "z": 1,
+            "type": "tm.External",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Сотрудник"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "посетитель",
+            "z": 1,
+            "type": "tm.External",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Посетитель"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "подтверждающий_пользователь",
+            "z": 1,
+            "type": "tm.External",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Подтверждающий пользователь"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "сотрудник_службы_безопасности",
+            "z": 1,
+            "type": "tm.External",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Сотрудник службы безопасности"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "администратор_системы",
+            "z": 1,
+            "type": "tm.External",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Администратор системы"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "терминал_регистрации",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Терминал регистрации"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "подтверждение_личности",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Подтверждение личности"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "проверка_биометрии",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Проверка биометрии"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "авторизация_доступа",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Авторизация доступа"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "приложение_управления_доступом",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Приложение управления доступом"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "bi-сервис_для_отчётности",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "BI-сервис для отчётности"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "веб-приложение_(интерфейс_админа)",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Веб-приложение (интерфейс админа)"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "api_шлюз",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "API шлюз"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "микросервис_аутентификации",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Микросервис аутентификации"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "микросервис_авторизации",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Микросервис авторизации"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "менеджер_ролей",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Менеджер ролей"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "хранилище_шаблонов_биометрии",
+            "z": 1,
+            "type": "tm.Store",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Хранилище шаблонов биометрии"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "хранилище_метаданных_пользователей",
+            "z": 1,
+            "type": "tm.Store",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Хранилище метаданных пользователей"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "хранилище_прав_доступа",
+            "z": 1,
+            "type": "tm.Store",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Хранилище прав доступа"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "хранилище_логов",
+            "z": 1,
+            "type": "tm.Store",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Хранилище логов"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "кеш_токенов",
+            "z": 1,
+            "type": "tm.Store",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Кеш токенов"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "flow_1",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "сотрудник"
+            },
+            "target": {
+              "id": "терминал_регистрации"
+            },
+            "attrs": {
+              "label": {
+                "text": "Ввод биометрии"
+              }
+            }
+          },
+          {
+            "id": "flow_2",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "сотрудник"
+            },
+            "target": {
+              "id": "терминал_проверки_аутентификации"
+            },
+            "attrs": {
+              "label": {
+                "text": "Попытка входа"
+              }
+            }
+          },
+          {
+            "id": "flow_3",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "посетитель"
+            },
+            "target": {
+              "id": "терминал_регистрации"
+            },
+            "attrs": {
+              "label": {
+                "text": "Регистрация посетителя"
+              }
+            }
+          },
+          {
+            "id": "flow_4",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "подтверждающий_пользователь"
+            },
+            "target": {
+              "id": "терминал_регистрации"
+            },
+            "attrs": {
+              "label": {
+                "text": "Подтверждение личности"
+              }
+            }
+          },
+          {
+            "id": "flow_5",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "сотрудник_службы_безопасности"
+            },
+            "target": {
+              "id": "bi-сервис_для_отчётности"
+            },
+            "attrs": {
+              "label": {
+                "text": "Запрос отчёта"
+              }
+            }
+          },
+          {
+            "id": "flow_6",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "администратор_системы"
+            },
+            "target": {
+              "id": "веб-приложение_(интерфейс_админа)"
+            },
+            "attrs": {
+              "label": {
+                "text": "Доступ к админке"
+              }
+            }
+          },
+          {
+            "id": "flow_7",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "терминал_регистрации"
+            },
+            "target": {
+              "id": "хранилище_шаблонов_биометрии"
+            },
+            "attrs": {
+              "label": {
+                "text": "Шаблон → хранилище"
+              }
+            }
+          },
+          {
+            "id": "flow_8",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "терминал_регистрации"
+            },
+            "target": {
+              "id": "хранилище_метаданных_пользователей"
+            },
+            "attrs": {
+              "label": {
+                "text": "Сохранение профиля"
+              }
+            }
+          },
+          {
+            "id": "flow_9",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "подтверждение_личности"
+            },
+            "target": {
+              "id": "терминал_регистрации"
+            },
+            "attrs": {
+              "label": {
+                "text": "Процесс подтверждения"
+              }
+            }
+          },
+          {
+            "id": "flow_10",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "проверка_биометрии"
+            },
+            "target": {
+              "id": "микросервис_аутентификации"
+            },
+            "attrs": {
+              "label": {
+                "text": "Передача результатов"
+              }
+            }
+          },
+          {
+            "id": "flow_11",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "авторизация_доступа"
+            },
+            "target": {
+              "id": "приложение_управления_доступом"
+            },
+            "attrs": {
+              "label": {
+                "text": "Доступ к системе"
+              }
+            }
+          },
+          {
+            "id": "flow_12",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "приложение_управления_доступом"
+            },
+            "target": {
+              "id": "хранилище_прав_доступа"
+            },
+            "attrs": {
+              "label": {
+                "text": "Запись прав"
+              }
+            }
+          },
+          {
+            "id": "flow_13",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "bi-сервис_для_отчётности"
+            },
+            "target": {
+              "id": "хранилище_логов"
+            },
+            "attrs": {
+              "label": {
+                "text": "Аналитика логов"
+              }
+            }
+          },
+          {
+            "id": "flow_14",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "веб-приложение_(интерфейс_админа)"
+            },
+            "target": {
+              "id": "приложение_управления_доступом"
+            },
+            "attrs": {
+              "label": {
+                "text": "Настройка ролей"
+              }
+            }
+          },
+          {
+            "id": "flow_15",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "api_шлюз"
+            },
+            "target": {
+              "id": "микросервис_аутентификации"
+            },
+            "attrs": {
+              "label": {
+                "text": "Внешний запрос (аутентификация)"
+              }
+            }
+          },
+          {
+            "id": "flow_16",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "api_шлюз"
+            },
+            "target": {
+              "id": "микросервис_авторизации"
+            },
+            "attrs": {
+              "label": {
+                "text": "Внешний запрос (авторизация)"
+              }
+            }
+          },
+          {
+            "id": "flow_17",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "микросервис_аутентификации"
+            },
+            "target": {
+              "id": "микросервис_авторизации"
+            },
+            "attrs": {
+              "label": {
+                "text": "Результат проверки"
+              }
+            }
+          },
+          {
+            "id": "flow_18",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "микросервис_авторизации"
+            },
+            "target": {
+              "id": "хранилище_прав_доступа"
+            },
+            "attrs": {
+              "label": {
+                "text": "Проверка прав"
+              }
+            }
+          },
+          {
+            "id": "flow_19",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "микросервис_авторизации"
+            },
+            "target": {
+              "id": "приложение_управления_доступом"
+            },
+            "attrs": {
+              "label": {
+                "text": "Решение об авторизации"
+              }
+            }
+          },
+          {
+            "id": "flow_20",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "микросервис_авторизации"
+            },
+            "target": {
+              "id": "кеш_токенов"
+            },
+            "attrs": {
+              "label": {
+                "text": "Создание токена"
+              }
+            }
+          },
+          {
+            "id": "flow_21",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "микросервис_авторизации"
+            },
+            "target": {
+              "id": "авторизация_доступа"
+            },
+            "attrs": {
+              "label": {
+                "text": "Передача данных доступа"
+              }
+            }
+          },
+          {
+            "id": "flow_22",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "менеджер_ролей"
+            },
+            "target": {
+              "id": "хранилище_прав_доступа"
+            },
+            "attrs": {
+              "label": {
+                "text": "Обновление ролей"
+              }
+            }
+          },
+          {
+            "id": "flow_23",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "кеш_токенов"
+            },
+            "target": {
+              "id": "микросервис_авторизации"
+            },
+            "attrs": {
+              "label": {
+                "text": "Проверка токена"
+              }
+            }
+          },
+          {
+            "id": "flow_24",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "терминал_проверки_аутентификации"
+            },
+            "target": {
+              "id": "микросервис_аутентификации"
+            },
+            "attrs": {
+              "label": {
+                "text": "Данные биометрии"
+              }
+            }
+          },
+          {
+            "id": "flow_25",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "терминал_проверки_аутентификации"
+            },
+            "target": {
+              "id": "проверка_биометрии"
+            },
+            "attrs": {
+              "label": {
+                "text": "Запуск биометрической проверки"
+              }
+            }
+          },
+          {
+            "id": "boundary_1",
+            "z": 0,
+            "type": "tm.Boundary",
+            "position": {
+              "x": 50,
+              "y": 50
+            },
+            "size": {
+              "width": 600,
+              "height": 400
+            },
+            "attrs": {
+              "label": {
+                "text": "Граница доверия: Внешние пользователи"
+              }
+            }
+          },
+          {
+            "id": "boundary_2",
+            "z": 0,
+            "type": "tm.Boundary",
+            "position": {
+              "x": 50,
+              "y": 50
+            },
+            "size": {
+              "width": 600,
+              "height": 400
+            },
+            "attrs": {
+              "label": {
+                "text": "Граница доверия: Серверная логика"
+              }
+            }
+          },
+          {
+            "id": "boundary_3",
+            "z": 0,
+            "type": "tm.Boundary",
+            "position": {
+              "x": 50,
+              "y": 50
+            },
+            "size": {
+              "width": 600,
+              "height": 400
+            },
+            "attrs": {
+              "label": {
+                "text": "Граница доверия: Хранилища данных"
+              }
+            }
+          },
+          {
+            "id": "boundary_4",
+            "z": 0,
+            "type": "tm.Boundary",
+            "position": {
+              "x": 50,
+              "y": 50
+            },
+            "size": {
+              "width": 600,
+              "height": 400
+            },
+            "attrs": {
+              "label": {
+                "text": "Граница доверия: Процессы аутентификации"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
