@@ -1,0 +1,827 @@
+{
+  "version": "2.0",
+  "summary": "Biometric Authentication System - English Model",
+  "detail": "Threat model with full DFD in English.",
+  "owner": "Security Architect",
+  "contributors": [
+    "ChatGPT Assistant"
+  ],
+  "diagrams": [
+    {
+      "title": "Complete English DFD - Biometric System",
+      "id": "dfd-complete-biometric-system-en",
+      "diagramType": "DFD",
+      "diagramJson": {
+        "cells": [
+          {
+            "id": "employee",
+            "z": 1,
+            "type": "tm.External",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Employee"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "visitor",
+            "z": 1,
+            "type": "tm.External",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Visitor"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "verifier",
+            "z": 1,
+            "type": "tm.External",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Verifier"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "security_officer",
+            "z": 1,
+            "type": "tm.External",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Security Officer"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "system_administrator",
+            "z": 1,
+            "type": "tm.External",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "System Administrator"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "registration_terminal",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Registration Terminal"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "identity_confirmation",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Identity Confirmation"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "biometric_check",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Biometric Check"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "access_authorization",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Access Authorization"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "access_management_app",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Access Management App"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "bi_reporting_service",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "BI Reporting Service"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "admin_web_interface",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Admin Web Interface"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "api_gateway",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "API Gateway"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "auth_microservice",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Auth Microservice"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "authorization_microservice",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Authorization Microservice"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "role_manager",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Role Manager"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "biometric_template_store",
+            "z": 1,
+            "type": "tm.Store",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Biometric Template Store"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "user_metadata_store",
+            "z": 1,
+            "type": "tm.Store",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "User Metadata Store"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "access_rights_store",
+            "z": 1,
+            "type": "tm.Store",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Access Rights Store"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "log_storage",
+            "z": 1,
+            "type": "tm.Process",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Log Storage"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "token_cache",
+            "z": 1,
+            "type": "tm.Store",
+            "position": {
+              "x": 100,
+              "y": 100
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "label": {
+                "text": "Token Cache"
+              }
+            },
+            "threats": []
+          },
+          {
+            "id": "flow_1",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "employee"
+            },
+            "target": {
+              "id": "registration_terminal"
+            },
+            "attrs": {
+              "label": {
+                "text": "Biometric input"
+              }
+            }
+          },
+          {
+            "id": "flow_2",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "visitor"
+            },
+            "target": {
+              "id": "registration_terminal"
+            },
+            "attrs": {
+              "label": {
+                "text": "Visitor registration"
+              }
+            }
+          },
+          {
+            "id": "flow_3",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "verifier"
+            },
+            "target": {
+              "id": "registration_terminal"
+            },
+            "attrs": {
+              "label": {
+                "text": "Identity confirmation"
+              }
+            }
+          },
+          {
+            "id": "flow_4",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "registration_terminal"
+            },
+            "target": {
+              "id": "biometric_template_store"
+            },
+            "attrs": {
+              "label": {
+                "text": "Store template"
+              }
+            }
+          },
+          {
+            "id": "flow_5",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "registration_terminal"
+            },
+            "target": {
+              "id": "user_metadata_store"
+            },
+            "attrs": {
+              "label": {
+                "text": "Store metadata"
+              }
+            }
+          },
+          {
+            "id": "flow_6",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "employee"
+            },
+            "target": {
+              "id": "biometric_check"
+            },
+            "attrs": {
+              "label": {
+                "text": "Authentication attempt"
+              }
+            }
+          },
+          {
+            "id": "flow_7",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "biometric_check"
+            },
+            "target": {
+              "id": "auth_microservice"
+            },
+            "attrs": {
+              "label": {
+                "text": "Biometric data"
+              }
+            }
+          },
+          {
+            "id": "flow_8",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "auth_microservice"
+            },
+            "target": {
+              "id": "authorization_microservice"
+            },
+            "attrs": {
+              "label": {
+                "text": "Auth result"
+              }
+            }
+          },
+          {
+            "id": "flow_9",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "authorization_microservice"
+            },
+            "target": {
+              "id": "access_rights_store"
+            },
+            "attrs": {
+              "label": {
+                "text": "Check rights"
+              }
+            }
+          },
+          {
+            "id": "flow_10",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "authorization_microservice"
+            },
+            "target": {
+              "id": "access_authorization"
+            },
+            "attrs": {
+              "label": {
+                "text": "Decision"
+              }
+            }
+          },
+          {
+            "id": "flow_11",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "access_authorization"
+            },
+            "target": {
+              "id": "access_management_app"
+            },
+            "attrs": {
+              "label": {
+                "text": "Access"
+              }
+            }
+          },
+          {
+            "id": "flow_12",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "access_management_app"
+            },
+            "target": {
+              "id": "access_rights_store"
+            },
+            "attrs": {
+              "label": {
+                "text": "Write rights"
+              }
+            }
+          },
+          {
+            "id": "flow_13",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "system_administrator"
+            },
+            "target": {
+              "id": "admin_web_interface"
+            },
+            "attrs": {
+              "label": {
+                "text": "Admin access"
+              }
+            }
+          },
+          {
+            "id": "flow_14",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "admin_web_interface"
+            },
+            "target": {
+              "id": "access_management_app"
+            },
+            "attrs": {
+              "label": {
+                "text": "Manage roles"
+              }
+            }
+          },
+          {
+            "id": "flow_15",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "bi_reporting_service"
+            },
+            "target": {
+              "id": "log_storage"
+            },
+            "attrs": {
+              "label": {
+                "text": "Analytics"
+              }
+            }
+          },
+          {
+            "id": "flow_16",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "api_gateway"
+            },
+            "target": {
+              "id": "auth_microservice"
+            },
+            "attrs": {
+              "label": {
+                "text": "Auth request"
+              }
+            }
+          },
+          {
+            "id": "flow_17",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "api_gateway"
+            },
+            "target": {
+              "id": "authorization_microservice"
+            },
+            "attrs": {
+              "label": {
+                "text": "Authorization request"
+              }
+            }
+          },
+          {
+            "id": "flow_18",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "role_manager"
+            },
+            "target": {
+              "id": "access_rights_store"
+            },
+            "attrs": {
+              "label": {
+                "text": "Update roles"
+              }
+            }
+          },
+          {
+            "id": "flow_19",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "authorization_microservice"
+            },
+            "target": {
+              "id": "token_cache"
+            },
+            "attrs": {
+              "label": {
+                "text": "Create token"
+              }
+            }
+          },
+          {
+            "id": "flow_20",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "token_cache"
+            },
+            "target": {
+              "id": "authorization_microservice"
+            },
+            "attrs": {
+              "label": {
+                "text": "Verify token"
+              }
+            }
+          },
+          {
+            "id": "flow_21",
+            "z": 2,
+            "type": "tm.Flow",
+            "source": {
+              "id": "security_officer"
+            },
+            "target": {
+              "id": "bi_reporting_service"
+            },
+            "attrs": {
+              "label": {
+                "text": "Reporting"
+              }
+            }
+          },
+          {
+            "id": "boundary_1",
+            "z": 0,
+            "type": "tm.Boundary",
+            "position": {
+              "x": 50,
+              "y": 50
+            },
+            "size": {
+              "width": 600,
+              "height": 400
+            },
+            "attrs": {
+              "label": {
+                "text": "Trust Boundary: External Users"
+              }
+            }
+          },
+          {
+            "id": "boundary_2",
+            "z": 0,
+            "type": "tm.Boundary",
+            "position": {
+              "x": 50,
+              "y": 50
+            },
+            "size": {
+              "width": 600,
+              "height": 400
+            },
+            "attrs": {
+              "label": {
+                "text": "Trust Boundary: Server Logic"
+              }
+            }
+          },
+          {
+            "id": "boundary_3",
+            "z": 0,
+            "type": "tm.Boundary",
+            "position": {
+              "x": 50,
+              "y": 50
+            },
+            "size": {
+              "width": 600,
+              "height": 400
+            },
+            "attrs": {
+              "label": {
+                "text": "Trust Boundary: Authentication Processes"
+              }
+            }
+          },
+          {
+            "id": "boundary_4",
+            "z": 0,
+            "type": "tm.Boundary",
+            "position": {
+              "x": 50,
+              "y": 50
+            },
+            "size": {
+              "width": 600,
+              "height": 400
+            },
+            "attrs": {
+              "label": {
+                "text": "Trust Boundary: Data Stores"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
