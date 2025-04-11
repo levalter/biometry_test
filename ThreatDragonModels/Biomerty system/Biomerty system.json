@@ -1,0 +1,26 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "Biomerty system",
+    "owner": "Лев",
+    "description": "Biometric authentication system in the office\nThe office has implemented a biometric authentication system to authenticate employees and visitors. It consists of user registration terminals (providing biometric data) and verifying user authentication. There are several user roles in the system, including the user who must confirm the registration of other users. The employee authorization system works together with the biometric authentication system. After successful authentication, the authorization system responds whether the employee can get the requested access. An access management application has been implemented in the office to provide access to various rooms.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "New STRIDE diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.4.1",
+        "cells": []
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
