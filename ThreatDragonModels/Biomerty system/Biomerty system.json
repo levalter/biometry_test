@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "6bcf7450-50e1-4760-b2b3-51b946e2a470",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Сотрудник",
@@ -154,6 +154,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -237,7 +238,6 @@
               ]
             },
             "id": "6b35f85b-3aea-479e-9bcc-f0ad6ad38811",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Внешний посетитель",
@@ -270,6 +270,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -353,7 +354,6 @@
               ]
             },
             "id": "36b1f921-9903-4da8-bb8f-20cb332c6612",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Регистрация\nбиометрии",
@@ -389,6 +389,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -472,7 +473,6 @@
               ]
             },
             "id": "97a415bb-0a0c-4a08-9811-a3b933b09f18",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Аутетнтификация ",
@@ -508,6 +508,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -591,7 +592,6 @@
               ]
             },
             "id": "079edfe3-6965-4ee8-ae7b-ba2ad0782b50",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Подтверждение\nрегистрации",
@@ -1417,6 +1417,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1500,7 +1501,6 @@
               ]
             },
             "id": "eddc291b-3053-405c-8189-cfbd44a17fce",
-            "zIndex": 11,
             "data": {
               "type": "tm.Actor",
               "name": "Админ",
@@ -1533,6 +1533,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1616,7 +1617,6 @@
               ]
             },
             "id": "5dec4166-04ed-413f-8638-cda1164ba16a",
-            "zIndex": 12,
             "data": {
               "type": "tm.Process",
               "name": "Создание\nшаблона\nбиометрии",
@@ -1655,6 +1655,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1738,7 +1739,6 @@
               ]
             },
             "id": "864fd7f1-ca2b-44fe-8897-52d2c4276096",
-            "zIndex": 13,
             "data": {
               "type": "tm.Store",
               "name": "БД шаблонов\nбиометрии",
@@ -1775,6 +1775,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1858,7 +1859,6 @@
               ]
             },
             "id": "813b2b2f-0ff8-4c5d-90f4-71f82ad65b60",
-            "zIndex": 14,
             "data": {
               "type": "tm.Process",
               "name": "Скан\nбиометрии",
@@ -1894,6 +1894,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1977,7 +1978,6 @@
               ]
             },
             "id": "5b7929a3-7f78-4d86-a5d7-1b631c169bba",
-            "zIndex": 15,
             "data": {
               "type": "tm.Process",
               "name": "Сравнение\nшаблонов\nбиометрии",
@@ -2013,6 +2013,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -2096,7 +2097,6 @@
               ]
             },
             "id": "ad4f993c-f749-403d-9b35-fd88fe00af13",
-            "zIndex": 16,
             "data": {
               "type": "tm.Process",
               "name": "Запрос\nавторизации",
@@ -2132,6 +2132,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -2215,7 +2216,6 @@
               ]
             },
             "id": "65166698-8cfe-451b-9a1a-947d34a3d2ec",
-            "zIndex": 17,
             "data": {
               "type": "tm.Process",
               "name": "Назачение роли",
@@ -2254,6 +2254,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 18,
             "ports": {
               "groups": {
                 "top": {
@@ -2337,7 +2338,6 @@
               ]
             },
             "id": "43289769-cff1-4771-95ea-d75e5d5c18e2",
-            "zIndex": 18,
             "data": {
               "type": "tm.Store",
               "name": "БД ролей",
@@ -2377,6 +2377,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 19,
             "ports": {
               "groups": {
                 "top": {
@@ -2460,7 +2461,6 @@
               ]
             },
             "id": "5036c7f1-05fd-4471-8c99-835f1a8d0733",
-            "zIndex": 19,
             "data": {
               "type": "tm.Store",
               "name": "Логи\nаутетнтификации",
@@ -2497,6 +2497,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 20,
             "ports": {
               "groups": {
                 "top": {
@@ -2580,7 +2581,6 @@
               ]
             },
             "id": "412ef393-f91a-4d29-b009-3587323d0f82",
-            "zIndex": 20,
             "data": {
               "type": "tm.Process",
               "name": "Проверка\nправ",
@@ -2613,6 +2613,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 21,
             "ports": {
               "groups": {
                 "top": {
@@ -2696,7 +2697,6 @@
               ]
             },
             "id": "21ff7f78-7b34-436f-8226-69d4a7e98239",
-            "zIndex": 21,
             "data": {
               "type": "tm.Process",
               "name": "Process",
